@@ -10,9 +10,9 @@ export const MetaplexModal = (props: any) => {
   return (
     <Modal
       bodyStyle={{
-        background: "#2F2F2F",
+        background: "#001B30",
         boxShadow: '0px 6px 12px 8px rgba(0, 0, 0, 0.3)',
-        borderRadius: 16,
+        borderRadius: 10,
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',

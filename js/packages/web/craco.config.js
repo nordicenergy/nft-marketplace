@@ -10,48 +10,48 @@ const appDirectory = fs.realpathSync(process.cwd());
 const resolvePackage = relativePath => path.resolve(appDirectory, relativePath);
 
 module.exports = {
-  webpack: {
-    configure: (webpackConfig, { env, paths }) => {
-      paths.appBuild = webpackConfig.output.path = path.resolve(
-        './../../build/web',
-      );
-      return webpackConfig;
-    },
-  },
-  plugins: [
-    /*{
-      plugin: CracoBabelLoader,
-      options: {
-        includes: [
-          // No "unexpected token" error importing components from these lerna siblings:
-          resolvePackage('../packages'),
-        ],
-      },
-    },*/
-    /*{
-      plugin: CracoAlias,
-      options: {
-        source: 'tsconfig',
-        // baseUrl SHOULD be specified
-        // plugin does not take it from tsconfig
-        baseUrl: '../../',
-        // tsConfigPath should point to the file where "baseUrl" and "paths" are specified
-        tsConfigPath: '../../tsconfig.json',
-      },
-    },*/
-    {
-      plugin: CracoLessPlugin,
-      options: {
-        lessLoaderOptions: {
-          lessOptions: {
-            modifyVars: {
-              '@primary-color': '#768BF9',
-              '@text-color': 'rgba(255, 255, 255)'
-            },
-            javascriptEnabled: true,
-          },
+    webpack: {
+        configure: (webpackConfig, { env, paths }) => {
+            paths.appBuild = webpackConfig.output.path = path.resolve(
+                './../../build/web',
+            );
+            return webpackConfig;
         },
-      },
     },
-  ],
+    plugins: [
+        /*{
+          plugin: CracoBabelLoader,
+          options: {
+            includes: [
+              // No "unexpected token" error importing components from these lerna siblings:
+              resolvePackage('../packages'),
+            ],
+          },
+        },*/
+        /*{
+          plugin: CracoAlias,
+          options: {
+            source: 'tsconfig',
+            // baseUrl SHOULD be specified
+            // plugin does not take it from tsconfig
+            baseUrl: '../../',
+            // tsConfigPath should point to the file where "baseUrl" and "paths" are specified
+            tsConfigPath: '../../tsconfig.json',
+          },
+        },*/
+        {
+            plugin: CracoLessPlugin,
+            options: {
+                lessLoaderOptions: {
+                    lessOptions: {
+                        modifyVars: {
+                            '@primary-color': '#00b1ff',
+                            '@text-color': 'rgba(255, 255, 255)'
+                        },
+                        javascriptEnabled: true,
+                    },
+                },
+            },
+        },
+    ],
 };

@@ -146,8 +146,8 @@ export function WalletProvider({ children = null as any }) {
         onCancel={close}
       >
         <div style={{
-          background: 'linear-gradient(180deg, #D329FC 0%, #8F6DDE 49.48%, #19E6AD 100%)',
-          borderRadius: 36,
+          background: 'linear-gradient(180deg, #00b1ff 0%, #0089c4 49.48%, #005478 100%)',
+          borderRadius: 15,
           width: 50,
           height: 50,
           textAlign: 'center',
@@ -158,7 +158,7 @@ export function WalletProvider({ children = null as any }) {
           marginBottom: 10,
         }}>M</div>
 
-        <h2>{provider ? 'Change provider' : 'Welcome to Metaplex'}</h2>
+        <h2>{provider ? 'Change provider' : 'Welcome to NFT Marketplace'}</h2>
         <p>{provider ? 'Feel free to switch wallet provider' : 'You must be signed in to place a bid'}</p>
 
         <br />

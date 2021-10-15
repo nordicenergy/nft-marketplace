@@ -1,6 +1,6 @@
 # Create Store
 
-To create a storefront powered by Metaplex, you need to create a store on the Metaplex platform. This guide will outline
+To create a storefront powered by NFT Marketplace, you need to create a store on the NFT platform. This guide will outline
 steps you need to take to create your store. After creating your store, this guide will show you how to manage your
 store information, such as who to whitelist as creators.
 
@@ -14,7 +14,7 @@ store information, such as who to whitelist as creators.
 
 ### Setting Up the Store ID
 
-To create a store, you must first derive the store ID given your public address. The Metaplex devs have already created
+To create a store, you must first derive the store ID given your public address. The NFT Marketplace devs have already created
 an environment variable for you to utilize - `REACT_APP_STORE_OWNER_ADDRESS_ADDRESS` - which you should set to be your
 wallet public address. To do this, you can create a `.env` file in `packages/web`, and set
 `REACT_APP_STORE_OWNER_ADDRESS_ADDRESS` to be your wallet public address in there.
@@ -25,7 +25,7 @@ REACT_APP_STORE_OWNER_ADDRESS_ADDRESS=YOUR_PUBLIC_WALLET_ADDRESS
 
 ### Create Your Store
 
-After creating your store ID, you may now create your store. The Metaplex platform has many helper methods to help you
+After creating your store ID, you may now create your store. The NFT Marketplace platform has many helper methods to help you
 to create your store. To create your store, you can use the `saveAdmin` method (`packages/web/src/actions/saveAdmin`)
 The easiest way to do this would be to either create a script or render a button locally to click to call this method.
 Please look at the function parameters of `saveAdmin` to see what parameters you would like to pass in:

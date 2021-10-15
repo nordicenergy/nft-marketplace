@@ -95,7 +95,7 @@ function RunAction({
       component = <LoadingOutlined />;
       break;
     case RunActionState.Success:
-      component = <CheckCircleTwoTone twoToneColor="#52c41a" />;
+      component = <CheckCircleTwoTone twoToneColor="#00b1ff" />;
   }
 
   return component;

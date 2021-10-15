@@ -27,7 +27,7 @@ export const AppBar = (props: {
           type="text"
           size="large"
           allowWalletChange={true}
-          style={{ color: '#2abdd2' }}
+          style={{ color: '#00b1ff' }}
         />
       )}
       <Popover
